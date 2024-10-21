@@ -1,0 +1,620 @@
+.nav-text{
+  font-size: larger;
+  font-weight: 900 !important;
+}
+.bg-image{
+  position: relative;
+  background: linear-gradient(rgba(8,8,8,0.3), rgba(8,8,8,0.3)), url('https://as2.ftcdn.net/v2/jpg/08/76/85/79/1000_F_876857924_WXZAJfPHulb80Qt593OjZ6bVOvPNzfJE.jpg');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-content{
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-title{
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  color: #fff;
+  font-size: 80px;
+}
+
+.search-box{
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+}
+.search-heading{
+  font-size: 47px;
+  margin-bottom: 30px;
+  
+}
+.detailsPageContent{
+  padding-top: 100px !important;
+}
+
+.ui.grid {
+  margin-top: 6rem;
+  margin-bottom: -1rem;
+  margin-left: 7rem;
+  margin-right: 3rem;
+}
+
+/* Set a fixed size for the card */
+.recipe-card {
+  width: 300px; /* Fixed width for the card */
+  height: 350px; /* Fixed height for the card */
+  overflow: hidden; /* Ensures nothing overflows the card */
+}
+
+
+/* Main navbar container */
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  /* padding: 10px 20px; */
+  padding: 0px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  /* width: 120px; Adjust logo size */
+  width: 74px;
+  height: auto;
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover; /* Ensures the image fits inside the circle */
+  overflow: hidden; /* Prevents any overflow from the image */
+}
+
+.like-recipes{
+  text-align: center;
+  margin-top: 4em !important;
+  color: darkblue;
+  font-size: 35px;
+}
+
+
+/* Navbar links */
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links ul li {
+  margin-left: 20px;
+}
+
+.navbar-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links ul li a:hover {
+  color: #e74c3c;
+}
+
+/* Mobile Hamburger Icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between the buttons */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/*  about page css */
+
+.about-page {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.hero-section h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 20px;
+}
+
+/* General Section Styling */
+.about-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-section p, .about-section ul {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Features Section */
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1 1 30%;
+  margin: 15px;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 16px;
+}
+
+/* Tech Stack Section */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tech-item {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  font-size: 18px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Developer Section */
+.developer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.developer-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Gallery Section */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Future Features Section */
+.future-features-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.future-features-section li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+/*  about page css */
+
+
+
+
+/*  details page css */
+/* General reset for padding/margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+}
+
+.recipe-details {
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 20px;
+}
+
+.recipe-details:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.recipe-image img:hover {
+  transform: scale(1.05);
+}
+
+.recipe-info {
+  flex: 1.5;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.recipe-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.recipe-info h2 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #555;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.recipe-info ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.recipe-info ul li {
+  padding: 10px;
+  margin: 5px 0;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.recipe-info ul li:hover {
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  transform: translateX(5px);
+}
+
+/* Split the ingredients and nutrients into two columns */
+.recipe-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.ingredients, .nutrients {
+  flex: 1;
+}
+
+.ingredients h2, .nutrients h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Nutrients Section */
+.nutrients {
+  margin-top: -4px;
+}
+
+.nutrients h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Style the table */
+.nutrients table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.nutrients table th, .nutrients table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+}
+
+.nutrients table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.nutrients table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+
+/* ------------------------------------------------------------------------------------- 
+
+.search-history {
+    margin-top: 10px;
+}
+
+.search-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-history li {
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.search-history li:hover {
+    text-decoration: underline;
+}
+
+.most-searched {
+  margin-bottom: 20px;
+}
+
+.most-searched ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.most-searched li {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Vertically center *\
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.search-history {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-history li {
+  cursor: pointer;
+  padding: 5px 0;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.search-history li:hover {
+  color: #0056b3;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+
+
+/* Responsive Navbar for Mobile */
+@media (max-width: 768px) {
+  .navbar-links ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    transform: translateX(-100%);
+  }
+
+  .navbar-links.open ul {
+    transform: translateX(0);
+  }
+
+  .navbar-links ul li {
+    margin: 20px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .fas {
+    color: white;
+  }
+
+  .recipe-card .col{
+    width: 100% !important;
+  }
+
+  
+  
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
