@@ -294,7 +294,7 @@ const RecipeListItem = ({ recipe }) => {
 
     return (
         <Card className="recipe-card">
-            <img src={recipe.image} alt={`Image of ${recipe.label}`} style={{ height: "170px", objectFit: "cover" }} />
+            <img src={recipe.image} alt={`Image of ${recipe.label}`} className="recipe-cart-image" />
             <Card.Content className="card-content">
                 <Card.Header className='content title'>{recipe.label}</Card.Header>
                 <p>Calories: {Math.round(recipe.calories)}</p>

@@ -60,7 +60,7 @@ import axios from 'axios';
 const APP_ID = '4f0805d6'; // Replace with your actual App ID
 const APP_KEY = 'b9adf84606d3c3b02c3b74426e11b0c2'; // Replace with your actual App Key
 
-export const getRecipes = async (query, from = 0, to = 10) => {
+export const getRecipes = async (query, from = 0, to = 20) => {
     try {
         const response = await axios.get(`https://api.edamam.com/search`, {
             params: {

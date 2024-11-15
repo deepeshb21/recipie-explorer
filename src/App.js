@@ -43,6 +43,7 @@ import{ BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RecipeDetails from './componets/RecipeDetails';
 import SavedRecipePage from './pages/SavedRecipePage';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -54,6 +55,8 @@ function App() {
         <Route path="/recipes/:id" element={<RecipeDetails />} />
         <Route path="/saved" element={<SavedRecipePage/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        
 
       </Routes>
     </Router>  

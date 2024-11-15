@@ -62,7 +62,7 @@
 
 
 //working code
-import { Container, Grid, Header } from "semantic-ui-react";
+import { Container, Grid, Header,} from "semantic-ui-react";
 import RecipeListitem from "./RecipeListitem";
 
 
@@ -75,10 +75,10 @@ const RecipeList  = ({ recipes, searchedQuery })  => {
             content={`Results for "${searchedQuery}"`}
             textAlign='center'
             />
-            <Grid columns={4} doubling>
+            <Grid columns={4} doubling stackable>
                 {
                     recipes && recipes.map(recipe =>(
-                        <Grid.Column>
+                        <Grid.Column  mobile={16} tablet={8} computer={4}>
                             <RecipeListitem recipe={recipe}/>
                         </Grid.Column>
                     ))

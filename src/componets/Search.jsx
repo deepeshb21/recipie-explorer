@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Grid, Form, Input, Icon } from "semantic-ui-react";
-import { getRecipes } from "../Services/api";
+
 
 
 const Search = ({ setSearchedQuery }) => {

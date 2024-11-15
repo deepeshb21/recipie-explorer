@@ -1,3 +1,4 @@
+import { Icon } from 'semantic-ui-react';
 import React from 'react';
 
 
@@ -65,35 +66,42 @@ const About = () => {
                     <h2>About the Developer</h2>
                     <div className="developer-info">
                         {/* <img src="your-photo-url.jpg" alt="Developer" className="developer-photo" /> */}
-                        <p>Hi, I'm [Your Name], a passionate full-stack developer who loves creating intuitive web applications. Recipe Explorer is designed to make cooking easier and more fun.</p>
+                        <p>Hi, I'm [Deepesh Boharpi], a passionate full-stack developer who loves creating intuitive web applications. Recipe Explorer is designed to make cooking easier and more fun.</p>
                     </div>
                 </div>
             </section>
 
-            {/* Screenshots Section */}
-            <section className="about-section gallery-section">
-                <div className="container">
-                    <h2>App Screenshots</h2>
-                    <div className="gallery-grid">
-                        <img src="screenshot1-url.jpg" alt="Screenshot 1" />
-                        <img src="screenshot2-url.jpg" alt="Screenshot 2" />
-                        <img src="screenshot3-url.jpg" alt="Screenshot 3" />
+            {/* Screenshots Section
+                <section className="about-section gallery-section">
+                    <div className="container">
+                        <h2>App Screenshots</h2>
+                        <div className="gallery-grid">
+                            <img src="screenshot1-url.jpg" alt="Screenshot 1" />
+                            <img src="screenshot2-url.jpg" alt="Screenshot 2" />
+                            <img src="screenshot3-url.jpg" alt="Screenshot 3" />
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section> */}
 
-            {/* Future Features Section */}
-            <section className="about-section future-features-section">
-                <div className="container">
-                    <h2>Future Features</h2>
-                    <ul>
-                        <li>User authentication and social sharing</li>
-                        <li>Shopping list creation from recipes</li>
-                        <li>Meal planning and scheduling</li>
-                        <li>Dark mode and customizable themes</li>
-                    </ul>
+
+            <footer className="footer">
+                <p>&copy; 2024 Recipe Explorer. All rights reserved.</p>
+                <div className="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <Icon name="facebook" />
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <Icon name="instagram" />
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <Icon name="github" />
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <Icon name="linkedin" />
+                    </a>
                 </div>
-            </section>
+            </footer>
+
         </div>
     );
 };
