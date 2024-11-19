@@ -17,7 +17,7 @@ const Search = ({ setSearchedQuery }) => {
                     Search Recipes
                 </h2>
                 <Form onSubmit={onFromSubmit}>     
-                    <Input 
+                    <Input className="recipe-search-box"
                         placeholder="Search for recipes..." 
                         action={{ icon: 'search', color: 'blue' }}
                         onChange={(e) => setvalue(e.target.value)}

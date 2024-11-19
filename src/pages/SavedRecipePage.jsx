@@ -53,7 +53,7 @@ return (
           <p>You haven't liked any recipes yet. Go explore and like some recipes!</p>
         </Message>
       ) : (
-        <Grid stackable>
+        <Grid stackable className="like-recipe-box">
           {savedRecipes.map((recipe) => (
             <Grid.Column key={recipe.recipe_id} computer={3} tablet={8} mobile={16}  style={{ marginTop: '5em', marginBottom: '6em', marginLeft: '6em', marginRight : '-1em', padding: 0}}>
               <RecipeListitem

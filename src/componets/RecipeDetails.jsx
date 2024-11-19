@@ -244,7 +244,7 @@ const RecipeDetails = () => {
             transition={{ duration: 0.5 }} 
         >
             <GridColumn className='backbtn-size'>
-                <Button
+                <Button className='back-btn-box'
                     as={Link}
                     to={'/recipes'}
                     content="Back to Recipe List"
