@@ -71,18 +71,6 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Screenshots Section
-                <section className="about-section gallery-section">
-                    <div className="container">
-                        <h2>App Screenshots</h2>
-                        <div className="gallery-grid">
-                            <img src="screenshot1-url.jpg" alt="Screenshot 1" />
-                            <img src="screenshot2-url.jpg" alt="Screenshot 2" />
-                            <img src="screenshot3-url.jpg" alt="Screenshot 3" />
-                        </div>
-                    </div>
-                </section> */}
-
 
             <footer className="footer">
                 <p>&copy; 2024 Recipe Explorer. All rights reserved.</p>

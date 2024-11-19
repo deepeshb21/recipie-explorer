@@ -59,35 +59,35 @@ const NavBar = () => {
           </ul>
         </nav> */}
 
-<nav className={isMobileMenuOpen ? "navbar-links open" : "navbar-links"}>
-  <ul>
-    <li>
-      <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-        <i className="fas fa-home"></i> Home
-      </Link>
-    </li>
-    <li>
-      <Link to="/recipes" onClick={() => setIsMobileMenuOpen(false)}>
-        <i className="fas fa-utensils"></i> Recipes
-      </Link>
-    </li>
-    <li>
-      <Link to="/saved" onClick={() => setIsMobileMenuOpen(false)}>
-        <i className="fas fa-heart"></i> Saved Recipes
-      </Link>
-    </li>
-    <li>
-      <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>
-        <i className="fas fa-info-circle"></i> About
-      </Link>
-    </li>
-    <li>
-      <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-        <i className="fas fa-envelope"></i> Contact
-      </Link>
-    </li>
-  </ul>
-</nav>
+        <nav className={isMobileMenuOpen ? "navbar-links open" : "navbar-links"}>
+          <ul>
+            <li>
+              <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
+                <i className="fas fa-home"></i> Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/recipes" onClick={() => setIsMobileMenuOpen(false)}>
+                <i className="fas fa-utensils"></i> Recipes
+              </Link>
+            </li>
+            <li>
+              <Link to="/saved" onClick={() => setIsMobileMenuOpen(false)}>
+                <i className="fas fa-heart"></i> Saved Recipes
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>
+                <i className="fas fa-info-circle"></i> About
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <i className="fas fa-envelope"></i> Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
 
         {/* Hamburger icon for mobile */}
