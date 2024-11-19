@@ -858,7 +858,7 @@ table th {
 
 /* Responsive Media Queries */
 /* Tablets and Small Laptops (max-width: 720px) */
-/* @media (max-width: 720px) {
+@media (max-width: 720px) {
   .navbar-links ul {
     position: absolute;
     top: 60px;
@@ -912,7 +912,7 @@ table th {
   .ui.card {
     margin: 1em 5px !important;
   }
-} */
+}
 
 /* Mobile Phones (max-width: 320px) */
 @media (max-width: 320px) {
@@ -971,7 +971,7 @@ table th {
   }
 
   .back-btn-box {
-    margin-left: 7% !important;
+    margin-left: -35% !important;
   }
 
   .quote-section {
@@ -1001,7 +1001,7 @@ table th {
 
   .container {
     width: 140% !important;
-    margin-left: 4px !important;
+    margin-left: 5px !important;
   }
 
   .footer {
@@ -1015,6 +1015,10 @@ table th {
 
   .recipe-search-box {
     width: 70% !important;
+  }
+
+  .about-page{
+    width: 96% !important;
   }
 }
 
