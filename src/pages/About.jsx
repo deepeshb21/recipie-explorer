@@ -4,7 +4,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="about-page">
+        <>
             {/* Fullscreen Hero Section */}
             <section className="hero-section" style={{ backgroundImage: 'url(https://themewagon.github.io/delicious/img/bg-img/bg4.jpg)' }}>
                 <div className="hero-content">
@@ -90,7 +90,7 @@ const About = () => {
                 </div>
             </footer>
 
-        </div>
+            </>
     );
 };
 

@@ -69,7 +69,7 @@ import RecipeListitem from "./RecipeListitem";
 const RecipeList  = ({ recipes, searchedQuery })  => {
      
     return(
-        <Container>
+        <Container className="">
             <Header
                size="huge"
             content={`Results for "${searchedQuery}"`}

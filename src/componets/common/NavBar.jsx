@@ -20,7 +20,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-//import './NavBar.css'; // Import the CSS file
+
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -81,11 +81,11 @@ const NavBar = () => {
                 <i className="fas fa-info-circle"></i> About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <i className="fas fa-envelope"></i> Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
