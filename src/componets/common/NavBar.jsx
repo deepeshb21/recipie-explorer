@@ -1,23 +1,3 @@
-// import { Menu } from 'semantic-ui-react';
-// import { logo } from '../../constants/constant';
-// import { Link } from 'react-router-dom';
-
-// const NavBar = () => {
-//   return (
-//     <Menu borderless fixed="top">
-//       <Menu.Item style={{ padding: '4px' }}>
-//         <img src={logo} alt="logo" style={{ width: '90px' }} />
-//       </Menu.Item>
-//       <Menu.Item name="Home" as={Link} to="/" />
-//       <Menu.Item name="Recipes" as={Link} to="/recipes" />
-//       <Menu.Item name="Saved Recipes" as={Link} to="/saved" />
-//     </Menu>
-//   )
-// }
-
-// export default NavBar;
-
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -38,27 +18,6 @@ const NavBar = () => {
           </Link>
         </div>
 
-        {/* Main Menu */}
-        {/* <nav className={isMobileMenuOpen ? "navbar-links open" : "navbar-links"}>
-          <ul>
-            <li>
-              <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-            </li>
-            <li>
-              <Link to="/recipes" onClick={() => setIsMobileMenuOpen(false)}>Recipes</Link>
-            </li>
-            <li>
-              <Link to="/saved" onClick={() => setIsMobileMenuOpen(false)}>Saved Recipes</Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
-            </li>
-          </ul>
-        </nav> */}
-
         <nav className={isMobileMenuOpen ? "navbar-links open" : "navbar-links"}>
           <ul>
             <li>
@@ -72,6 +31,11 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
+              <Link to="/famous-recipe" onClick={() => setIsMobileMenuOpen(false)}>
+                <i className="fas fa-smile"></i> Famous Recipes
+              </Link>
+            </li>
+            <li>
               <Link to="/saved" onClick={() => setIsMobileMenuOpen(false)}>
                 <i className="fas fa-heart"></i> Saved Recipes
               </Link>
@@ -81,11 +45,6 @@ const NavBar = () => {
                 <i className="fas fa-info-circle"></i> About
               </Link>
             </li>
-            {/* <li>
-              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                <i className="fas fa-envelope"></i> Contact
-              </Link>
-            </li> */}
           </ul>
         </nav>
 

@@ -41,6 +41,10 @@ const About = () => {
                             <h3>Detailed Nutrition</h3>
                             <p>Get complete nutritional information for every recipe.</p>
                         </div>
+                        <div className="feature-item">
+                            <h3>Famous Recipes</h3>
+                            <p>Get most famous recipes in around the world recipe.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -73,25 +77,31 @@ const About = () => {
 
 
             <footer className="footer">
-                <p>&copy; 2024 Recipe Explorer. All rights reserved.</p>
-                <div className="social-icons">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <Icon name="facebook" />
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <Icon name="instagram" />
-                    </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                        <Icon name="github" />
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <Icon name="linkedin" />
-                    </a>
+                <div className="footer-content">
+                    <p>&copy; 2024 Recipe Explorer. All rights reserved.</p>
+                    <div className="social-icons">
+                        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <Icon name="facebook" />
+                        </a>
+                        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <Icon name="instagram" />
+                        </a>
+                        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <Icon name="github" />
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <Icon name="linkedin" />
+                        </a>
+                        {/* <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <Icon name="twitter" />
+                        </a> */}
+                    </div>
                 </div>
             </footer>
 
-            </>
+
+
+        </>
     );
 };
-
 export default About;
