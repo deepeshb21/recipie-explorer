@@ -5,8 +5,9 @@ const APP_KEY = 'b9adf84606d3c3b02c3b74426e11b0c2'; // Replace with your actual 
 
 export const getRecipes = async (query, from = 0, to = 20) => {
     try {
-        const response = await axios.get(`https://api.edamam.com/search`, {
+        const response = await axios.get(`https://api.edamam.com/api/recipes/v2`, {
             params: {
+                type: 'public',
                 q: query,
                 app_id: APP_ID,
                 app_key: APP_KEY,
